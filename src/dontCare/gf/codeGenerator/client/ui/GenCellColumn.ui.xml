@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel>
+		VO 名稱：<g:TextBox ui:field="voName" />
+		<g:Button ui:field="generate">產生</g:Button> <br />
+		<g:HorizontalPanel spacing="5">
+			<g:HTMLPanel>
+				<g:Label>Field Declaration</g:Label>
+				<g:TextArea ui:field="voField" width="300px" height="600px" />
+			</g:HTMLPanel>
+			<g:HTMLPanel>
+				<g:Label>Field Declaration</g:Label>
+				<g:TextArea ui:field="columnResult" width="500px" height="600px" />
+			</g:HTMLPanel>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

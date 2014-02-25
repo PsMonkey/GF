@@ -1,0 +1,24 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:dontCare.gf.codeGenerator.client.ui">
+	<ui:style>
+	</ui:style>
+	<g:TabLayoutPanel barHeight="30" width="98%" height="98%">
+		<g:tab>
+			<g:header>RpcTask</g:header>
+			<c:GenRpcTask />
+		</g:tab>
+		<g:tab>
+			<g:header>Event</g:header>
+			<c:GenEvent />
+		</g:tab>
+		<g:tab>
+			<g:header>Cell Column</g:header>
+			<c:GenCellColumn />
+		</g:tab>
+		<g:tab>
+			<g:header>CodeToString</g:header>
+			<c:CodeToString />
+		</g:tab>
+	</g:TabLayoutPanel>
+</ui:UiBinder> 

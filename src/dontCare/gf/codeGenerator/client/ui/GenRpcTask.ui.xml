@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel>
+		Task 名稱：<g:TextBox ui:field="taskName" /> <br/>
+		回傳資料型態：<g:TextBox ui:field="returnType" /> 
+		<g:Button ui:field="generateBtn">產生</g:Button> <br/>
+		<g:TextArea ui:field="result" width="90%" height="600px" />
+	</g:HTMLPanel>
+</ui:UiBinder> 
