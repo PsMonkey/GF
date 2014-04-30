@@ -25,6 +25,22 @@ public class ListBoxUtil {
 	}
 	
 	/**
+	 * 用 item 值設定 selected index。
+	 * 
+	 * <p><b>注意：不會觸發 change event</b></p>
+	 * @param listBox
+	 * @param itemValue
+	 */
+	public static void setByItem(ListBox listBox, String itemValue) {
+		for (int i = 0; i < listBox.getItemCount(); i++) {
+			if (listBox.getItemText(i).equals(itemValue)) {
+				listBox.setSelectedIndex(i);
+				return;
+			}
+		}
+	}
+	
+	/**
 	 * 讓 ListBox 自動發出 {@link ChangeEvent}（觸發 {@link ChangeHandler}）。
 	 * {@link ListBox#getSelectedIndex()} 會是目前的值、沒有變動過。
 	 * @param listBox
